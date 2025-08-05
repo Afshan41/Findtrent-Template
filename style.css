@@ -76,6 +76,7 @@ nav{
 
 .navbar{
     justify-content: space-between;
+    position: relative;
 }
 
 .nav-toggle{

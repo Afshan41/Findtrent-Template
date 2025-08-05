@@ -19,7 +19,7 @@
                 <img src="image.png" alt="img">
             </a>
 
-            <div class="nav-item">
+            <div class="nav-item" id="nav-item">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">About</a></li>
                     <li><a href="#" class="hover-link">How it work</a></li>
@@ -30,7 +30,7 @@
                     <li><a href="#" class="hover-link secondary-btn">Register</a></li>
                 </ul>
             </div>
-            <a href="#" class="nav-toggle hover-link">
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
                 <i class="fa-solid fa-bars"></i>
             </a>
         </div>
@@ -204,7 +204,16 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer> 
+
+    <script>
+        const toggleButton = document.getElementById("nav-toggle");
+        const navItem = document.getElementById("nav-item");
+
+        toggleButton.addEventListener('click', () =>{
+            navItem.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
 

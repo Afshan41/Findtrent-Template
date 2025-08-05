@@ -4,8 +4,29 @@
       margin-right: 20px;
   }
 
+  .hover-link:hover{
+    color: var(--primary-text-color);
+  }
+
+  .navbar{
+    overflow: initial;
+  }
+
   .nav-item{
-    display: none;
+    background-color: var(--accent-dark-color);
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding-block: 30px;
+  }
+
+  .nav-item.active{
+    left: 0;
+  }
+
+  .nav-item ul{
+    flex-direction: column;
   }
 
   .header-contain h1{
